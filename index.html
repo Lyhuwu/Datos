@@ -2,34 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Meta tag estricto para móviles, previene el zoom táctil accidental del navegador -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mi Espacio en Kinopio</title>
+    <title>Mi Hub Kinopio</title>
     
     <style>
-        /* Reseteo global para eliminar márgenes blancos del navegador */
+        /* Reseteo para eliminar bordes blancos por defecto */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Bloqueamos el scroll del body para que la navegación ocurra solo dentro del iframe de Kinopio */
+        /* Configuración de fondo con un tono aesthetic/pastel y bloqueo de scroll nativo */
         html, body {
             width: 100%;
             height: 100%;
             overflow: hidden; 
-            background-color: #f0f0f0; 
+            background-color: #fff0f5; 
             font-family: sans-serif;
         }
 
-        /* Contenedor principal ocupando el 100% del Viewport (pantalla) */
+        /* El contenedor abarca el 100% del alto y ancho del dispositivo móvil */
         .kinopio-embed {
             width: 100vw;
             height: 100vh;
             display: block;
         }
 
-        /* El iframe se expande para llenar todo el contenedor */
+        /* Tu iframe se expande dinámicamente sin bordes para parecer una app nativa */
         .kinopio-embed iframe {
             width: 100%;
             height: 100%;
@@ -40,9 +41,11 @@
 </head>
 <body>
 
+    <!-- Contenedor inmersivo -->
     <div class="kinopio-embed">
+        <!-- Utilizamos tu enlace exacto con el zoom=40 nativo de Kinopio -->
         <iframe 
-            src="https://kinopio.club/embed/?spaceId=axmzTe2qohG25gtwoXFDc&zoom=100" 
+            src="https://kinopio.club/embed/?spaceId=axmzTe2qohG25gtwoXFDc&zoom=40" 
             allowfullscreen>
         </iframe>
     </div>
