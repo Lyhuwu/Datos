@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mi Espacio en Kinopio</title>
+    
+    <style>
+        /* Reseteo global para eliminar márgenes blancos del navegador */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Bloqueamos el scroll del body para que la navegación ocurra solo dentro del iframe de Kinopio */
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+            background-color: #f0f0f0; 
+            font-family: sans-serif;
+        }
+
+        /* Contenedor principal ocupando el 100% del Viewport (pantalla) */
+        .kinopio-embed {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+
+        /* El iframe se expande para llenar todo el contenedor */
+        .kinopio-embed iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kinopio-embed">
+        <iframe 
+            src="https://kinopio.club/embed/?spaceId=axmzTe2qohG25gtwoXFDc&zoom=100" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
